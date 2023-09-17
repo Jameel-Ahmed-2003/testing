@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        h1{
+            width: fit-content;
+        }
+        h1::after{
+            content:'';
+            display: block;
+            bottom: 0;
+            left: 0;
+            height: 4px;
+            background-color: rebeccapurple;
+            transform: scaleX(0);
+            transform-origin:right;
+            transition: transform .3s;
+        }
+        h1::before{
+            content:'';
+            display: block;
+            top: 0;
+            right: 0;
+            height: 4px;
+            background-color: rebeccapurple;
+            transform: scaleX(0);
+            transform-origin:left;
+            transition: transform .3s;
+        }
+        h1:hover::after{
+            transform: scaleX(1);
+            transform-origin: left;
+        }
+        h1:hover::before{
+            transform: scaleX(1);
+            transform-origin: right;
+        }
+    </style>
+</head>
+<body>
+    <h1>UNIFORM RESOURCE LOCATOR</h1>
+</body>
+</html>

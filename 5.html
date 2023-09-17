@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="hover.css">
+    <style>
+
+        h1::after {
+            display: block;
+            bottom: 0;
+            left: 0;
+            transform: scaleX(0);
+            transition:transform .3s;
+        }
+
+        h1:hover::after {
+            transform:scaleX(1);
+        }
+    </style>
+</head>
+
+<body>
+    <h1>HYPER TEXT MARKUP LANGUAGE</h1>
+</body>
+
+</html>
