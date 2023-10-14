@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="hover.css">
+    <style>
+        .container{
+            display: flex;
+            justify-content:center;
+            align-items: center;
+            flex-direction: column;
+        }
+        h1{
+            position: relative;
+            cursor: pointer;
+        }
+        h1::after{
+            position: absolute;
+            bottom:0;
+            left: 0;
+            width: 0;
+            transition: .3s;
+        }
+        h1:hover::after{
+            width: 100%;
+        }
+    </style>
+<body>
+    <div class="container">
+        <h1>HYPER TEXT MARKUP LANGUAGE</h1>
+        <h1>CASCADING STYLE SHEET</h1>
+        <h1>SYNTACTICALLY AWESOME STYLESHEET</h1>
+        <h1>HYPERLINK REFERENCE</h1>
+        <h1>UNIFORM RESOURCE LOCATOR</h1>
+        <h1>DOMAIN NAME SERVICE</h1>
+        <h1></h1>
+        <h1></h1>
+    </div>
+</body>
+</html>
